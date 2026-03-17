@@ -78,7 +78,7 @@ Authorization: Bearer <your-jwt-token>
 
 Use Postman, Hoppscotch, or Insomnia to call endpoints and include tokens appropriately.
 
-## 📁 Project Structure (example)
+## 📁 Project Structure 
 app/
 ├── core/        # configs, settings
 ├── db/          # models & migrations
