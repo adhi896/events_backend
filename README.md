@@ -80,10 +80,10 @@ Use Postman, Hoppscotch, or Insomnia to call endpoints and include tokens approp
 
 ## 📁 Project Structure 
 app/
-├── core/        # configs, settings
-├── db/          # models & migrations
-├── routers/     # api routers
-├── schemas/     # pydantic schemas
+├── core/        
+├── db/          
+├── routers/      
+├── schemas/     
 ├── main.py
 alembic.ini
 .env
