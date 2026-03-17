@@ -1,12 +1,12 @@
-events_backend
+# EVENTS_BACKEND
 
 FastAPI backend ⚡ for event management — built with SQLAlchemy, Alembic, JWT auth, Pydantic models, and modular routing.
 
-About
+## About
 
 This is a backend REST API for managing events with secure authentication, database migrations, and clean architecture. Built using FastAPI and major Python tooling for scalable APIs.
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 
 FastAPI – high‑perf Python web framework
 SQLAlchemy – ORM for database modeling
@@ -15,7 +15,7 @@ Pydantic – request/response validation
 JWT – JSON Web Token auth for secure access
 APIRouter – modular route organization
 
-🔑 Key Features
+## 🔑 Key Features
 
 Register & login with JWT authentication
 Protected routes with token verification
@@ -23,7 +23,7 @@ Structured routers for separate modules
 SQLAlchemy models + Pydantic schemas
 Alembic migrations for safe database evolution
 
-🛠 Setup & Installation
+## 🛠 Setup & Installation
 
 Clone the repo:
 
@@ -47,7 +47,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 
 Adjust to your setup (PostgreSQL/MySQL/SQLite).
 
-🧠 Database Migrations
+## 🧠 Database Migrations
 
 Initialize (if not done):
 
@@ -56,12 +56,12 @@ alembic init alembic
 Run migrations:
 
 alembic upgrade head
-🚀 Running the App
+## 🚀 Running the App
 uvicorn main:app --reload
 
 Your controllers will be live at http://127.0.0.1:8000
 
-🔗 Example Routes
+## 🔗 Example Routes
 
 POST /auth/register – create user
 
@@ -74,16 +74,16 @@ POST /events/ – create event (auth needed)
 Protected routes require the header:
 
 Authorization: Bearer <your-jwt-token>
-💡 Testing
+## 💡 Testing
 
 Use Postman, Hoppscotch, or Insomnia to call endpoints and include tokens appropriately.
 
-📁 Project Structure (example)
+## 📁 Project Structure (example)
 app/
-  ├── core/          # configs, settings
-  ├── db/            # models & migrations
-  ├── routers/       # api routers
-  ├── schemas/       # pydantic schemas
-  ├── main.py
+├── core/        # configs, settings
+├── db/          # models & migrations
+├── routers/     # api routers
+├── schemas/     # pydantic schemas
+├── main.py
 alembic.ini
 .env
